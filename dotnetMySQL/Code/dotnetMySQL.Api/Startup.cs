@@ -26,7 +26,7 @@ namespace dotnetMySQL.Api
     public IConfiguration Configuration { get; }
     public IHostEnvironment WebHostEnvironment { get; }
 
-    // This method gets called by the runtime. Use this method to add services to the container.
+    // This method gets called by the runtime. Use this method to add services to the containers.
     public void ConfigureServices(IServiceCollection services)
     {
          if (Configuration["OpenTelemetry:isEnabled"] == "true")
